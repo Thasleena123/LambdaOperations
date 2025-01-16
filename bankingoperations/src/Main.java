@@ -38,7 +38,7 @@ public class Main {
             bankingSystem.getRankedAccounts().forEach(System.out::println);
 
             System.out.println("\nFemale Account Holders with Balance > 3000:");
-            bankingSystem.getFemaleAccountHoldersWithHighBalance().forEach(System.out::println);
+            bankingSystem.getFemaleAccountHolders().forEach(System.out::println);
         }
 
     }

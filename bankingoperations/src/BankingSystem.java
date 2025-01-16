@@ -39,7 +39,7 @@ public class BankingSystem {
                 .collect(Collectors.toList());
     }
 
-    public List<String> getFemaleAccountHoldersWithHighBalance() {
+    public List<String> getFemaleAccountHolders() {
         return accounts.values().stream()
                 .filter(a -> a.gender.equals("female") && a.balance > 3000)
                 .map(a -> a.accountId + " , " + a.firstName + " " + a.lastName + " ," + a.balance)
